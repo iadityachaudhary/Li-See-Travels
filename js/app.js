@@ -871,3 +871,58 @@ document.documentElement.style.setProperty('--vh', "".concat(vh, "px")); // togg
     smile.removeClass('active');
   });
 })();
+$(document).ready(function() {
+  // Attach click event listener to the search icon
+  $('.panel__search').click(function(event) {
+      event.preventDefault(); // Prevent the default behavior of the link
+
+      // Retrieve user input values
+      var location = $('.location__input').val();
+      var destination = $('.destination-input').val();
+      console.log('Destination:', destination);
+      var date = $('.datepicker__input').val();
+      var adults = $('.js-counter-adults').val();
+      var children = $('.js-counter-children').val();
+      var travelers = adults + ' Adults, ' + children + ' Children';
+
+      // Construct email body
+      var subject = 'Bus Booking Details';
+      var body = 'Location: ' + location + '\n' +
+                 'Destination: ' + destination + '\n' +
+                 'Date: ' + date + '\n' +
+                 'Travelers: ' + travelers;
+
+                 var receiverEmail = 'shivanshu814@gmail.com';
+
+      // Construct mailto link
+      var mailtoLink = 'mailto:'+receiverEmail + 
+      '?subject=' + encodeURIComponent(subject) +
+                      '&body=' + encodeURIComponent(body);
+
+      // Open default email client with pre-filled email
+      window.location.href = mailtoLink;
+  });
+});
+
+document.getElementById('searchForm').addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent the form from submitting normally
+  
+  // Retrieve user input values
+  var searchText = document.getElementById('searchInput').value;
+
+  // Construct email body
+  var subject = 'Need your Assistance';
+  var body = 'Search Query: ' + searchText;
+
+  // Receiver's email
+  var receiverEmail = 'shivanshu814pathak@gmail.com';
+
+  // Construct mailto link
+  var mailtoLink = 'mailto:' + receiverEmail +
+                   '?subject=' + encodeURIComponent(subject) +
+                   '&body=' + encodeURIComponent(body);
+
+  // Open default email client with pre-filled email
+  window.location.href = mailtoLink;
+});
+

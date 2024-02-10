@@ -58,17 +58,17 @@
       <header class="header js-header">
         <div class="header__center center"><a class="header__logo" href="index.html"><img class="some-icon" src="img/logo-dark.svg" alt="Fleet"><img class="some-icon-dark" src="img/logo-light.svg" alt="Fleet"></a>
           <div class="header__wrapper js-header-wrapper">
-            <div class="header__item header__item_dropdown js-header-item">
+            <!-- <div class="header__item header__item_dropdown js-header-item">
               <button class="header__head js-header-head">Travelers
                 <svg class="icon icon-arrow-down">
                   <use xlink:href="#icon-arrow-down"></use>
                 </svg>
-              </button>
-              <div class="header__body js-header-body">
+              </button> -->
+              <!-- <div class="header__body js-header-body">
                 <div class="header__menu"><a class="header__link" href="index.html">
                     <svg class="icon icon-comment">
                       <use xlink:href="#icon-comment"></use>
-                    </svg>Stays</a><a class="header__link" href="flights.html">
+                    </svg></a><a class="header__link" href="flights.html">
                     <svg class="icon icon-email">
                       <use xlink:href="#icon-email"></use>
                     </svg>Flights</a><a class="header__link" href="things-to-do.html">
@@ -78,9 +78,10 @@
                     <svg class="icon icon-email">
                       <use xlink:href="#icon-email"></use>
                     </svg>Cars</a></div>
-              </div>
-            </div><a class="header__item active" href="support.html">Support</a>
-            <div class="header__item header__item_language js-header-item">
+              </div> -->
+            <!-- </div> -->
+            <a class="header__item active" href="support.html">Support</a>
+            <!-- <div class="header__item header__item_language js-header-item">
               <button class="header__head js-header-head">
                 <svg class="icon icon-globe">
                   <use xlink:href="#icon-globe"></use>
@@ -97,7 +98,8 @@
                     <div class="header__category">Français</div>
                     <div class="header__country">Canada</div></a></div>
               </div>
-            </div><a class="button button-stroke button-small header__button" href="list-your-property.html">List your property</a>
+            </div> -->
+            <!-- <a class="button button-stroke button-small header__button" href="list-your-property.html">List your property</a> -->
           </div>
           <div class="header__item header__item_notification js-header-item">
             <button class="header__head js-header-head active">
@@ -105,7 +107,7 @@
                 <use xlink:href="#icon-notification"></use>
               </svg>
             </button>
-            <div class="header__body js-header-body">
+            <!-- <div class="header__body js-header-body">
               <div class="header__title">Notification</div>
               <div class="header__notifications"><a class="header__notification" href="message-center.html">
                   <div class="header__avatar"><img src="img/content/avatar-1.jpg" alt="Avatar"></div>
@@ -122,7 +124,7 @@
                     <div class="header__date">3 hours ago</div>
                     <div class="header__status" style="background-color: #3B71FE;"></div>
                   </div></a></div>
-            </div>
+            </div> -->
           </div><a class="header__login js-popup-open" href="#popup-login" data-effect="mfp-zoom-in">
             <svg class="icon icon-user">
               <use xlink:href="#icon-user"></use>
@@ -168,10 +170,10 @@
               <div class="support__preview"><img class="some-icon js-parallax" data-scale="1.5" data-orientation="left" srcSet="img/content/support-pic-4@2x.png 2x" src="img/content/support-pic-4.png" alt="Support"><img class="some-icon-dark js-parallax" data-scale="1.5" data-orientation="left" srcSet="img/content/support-pic-dark-4@2x.png 2x" src="img/content/support-pic-dark-4.png" alt="Support"></div>
             </div>
             <h1 class="support__title hero">Support</h1>
-            <div class="support__info">Stacks is a production-ready library of stackable content blocks built in React Native.</div>
-            <form class="subscription subscription_big">
-              <input class="subscription__input" type="text" name="search" placeholder="Search anythingl" required="required"/>
-              <button class="subscription__btn">
+            <div class="support__info">Li See Travels</div>
+            <form class="subscription subscription_big" id="searchForm">
+              <input class="subscription__input" type="text" name="search" id="searchInput" placeholder="Search anythingl" required="required"/>
+              <button class="subscription__btn" type="submit">
                 <svg class="icon icon-search">
                   <use xlink:href="#icon-search"></use>
                 </svg>
@@ -182,8 +184,8 @@
         <div class="section-pd section-bg topics">
           <div class="topics__center center">
             <div class="topics__head">
-              <div class="stage">A creative agency that lead and inspire</div>
-              <h2 class="topics__title h2">Popular topics</h2><a class="button topics__button" href="messages.html">Send message</a>
+              <div class="stage">Our WeChat id is 'phantasos0725'</div>
+              <a class="button topics__button" href="https://web.wechat.com/?lang=en" target="_blank">Send message</a>
             </div>
             <div class="topics__wrapper">
               <div class="topics__slider js-slider-topics">
@@ -455,7 +457,13 @@
               </div>
             </div>
             <div class="footer__col">
-              <div class="footer__menu"><a class="footer__link" href="index.html">Stays</a><a class="footer__link" href="flights.html">Flights</a><a class="footer__link" href="support.html">Support</a><a class="footer__link" href="cars.html">Cars</a><a class="footer__link" href="things-to-do.html">Things to do</a></div>
+              <div class="footer__menu">
+                <a class="footer__link" href="index.html">Buses</a>
+                <!-- <a class="footer__link" href="flights.html">Flights</a>
+                <a class="footer__link" href="support.html">Support</a>
+                <a class="footer__link" href="cars.html">Cars</a>
+                <a class="footer__link" href="things-to-do.html">Things to do</a> -->
+              </div>
             </div>
             <div class="footer__col">
               <div class="footer__info">Join our community 🔥</div>

@@ -24,7 +24,8 @@ input[type="email"],
 input[type="tel"],
 input[type="password"],
 textarea {
-  -webkit-appearance: none; }
+  -webkit-appearance: none;
+  appearance: none; }
 
 input[type="submit"],
 button {
@@ -275,6 +276,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-container {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   height: 100%;
   left: 0;
   outline: none;
@@ -359,6 +361,7 @@ body.compensate-for-scrollbar {
 
 .fancybox-slide {
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   display: none;
   height: 100%;
   left: 0;
@@ -413,6 +416,7 @@ body.compensate-for-scrollbar {
   -webkit-animation-timing-function: cubic-bezier(0.5, 0, 0.14, 1);
           animation-timing-function: cubic-bezier(0.5, 0, 0.14, 1);
   -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background: transparent;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -1272,7 +1276,8 @@ html:not([dir=rtl]) .noUi-horizontal .noUi-handle {
   z-index: 1043;
   position: fixed;
   outline: none !important;
-  -webkit-backface-visibility: hidden; }
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;}
 
 .mfp-container {
   text-align: center;
@@ -1366,6 +1371,7 @@ button.mfp-arrow {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+  appearance: none;
   display: block;
   outline: none;
   padding: 0;
@@ -2109,7 +2115,8 @@ body.dark .some-icon {
   body.dark .select {
     background: #141416;
     box-shadow: inset 0 0 0 2px #353945;
-    -webkit-appearance: none; }
+    -webkit-appearance: none;
+    appearance: none; }
     body.dark .select:before {
       box-shadow: inset 0 0 0 2px #353945;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' fill='none' viewBox='0 0 10 6'%3E%3Cpath fill-rule='evenodd' d='M9.207.793a1 1 0 0 0-1.414 0L5 3.586 2.207.793A1 1 0 1 0 .793 2.207l3.5 3.5a1 1 0 0 0 1.414 0l3.5-3.5a1 1 0 0 0 0-1.414z' fill='%23FCFCFD'/%3E%3C/svg%3E"); }
@@ -2616,7 +2623,9 @@ body.dark .some-icon {
 .header {
   position: relative;
   z-index: 10;
-  padding: 24px 0; }
+  padding: 10px 0;
+  height: 120px;
+}
   @media only screen and (max-width: 767px) {
     .header {
       padding: 48px 0 24px; } }
@@ -3397,18 +3406,21 @@ body.dark .some-icon {
         flex: 0 0 220px; } }
   .panel_stays .panel__row > div:nth-child(2),
   .panel_stays-category .panel__row > div:nth-child(2) {
-    flex-grow: 1; }
+    flex-grow: 1;
+     }
   .panel_stays .panel__row > div:nth-child(3),
   .panel_stays-category .panel__row > div:nth-child(3) {
     flex: 0 0 296px; }
     @media only screen and (max-width: 1179px) {
       .panel_stays .panel__row > div:nth-child(3),
       .panel_stays-category .panel__row > div:nth-child(3) {
-        flex: 0 0 240px; } }
+        flex: 0 0 240px;
+         } }
     @media only screen and (max-width: 1023px) {
       .panel_stays .panel__row > div:nth-child(3),
       .panel_stays-category .panel__row > div:nth-child(3) {
-        flex: 0 0 170px; } }
+        flex: 0 0 170px;
+         } }
   .panel_flights .panel__row {
     padding-right: 100px; }
     @media only screen and (max-width: 1339px) {
@@ -3617,17 +3629,20 @@ body.dark .some-icon {
       text-align: center; } }
 
 .main__title {
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+   }
   body.dark .main__title {
-    color: #23262F; }
+    color: #010a0e; }
 
 .main__info {
   margin-top: 0;
   margin-bottom: 24px;
-  color: #23262F; }
+  color: #01040c;
+  font-weight: bold; }
   @media only screen and (max-width: 1179px) {
     .main__info {
-      font-size: 16px; } }
+      font-size: 20px;
+      font-weight: bold; } }
 
 @media only screen and (max-width: 1179px) {
   .main_stays, .main_flights, .main_tasks {
@@ -3773,12 +3788,16 @@ body.dark .some-icon {
 
 .adventure__preview {
   flex-shrink: 0;
-  width: 160px; }
+  width: 160px;
+  height: 160px; }
   @media only screen and (max-width: 1179px) {
     .adventure__preview {
-      width: 112px; } }
+      width: 112px;
+    height : 112 px; } }
   .adventure__preview img {
-    width: 100%; }
+    width: 100%;
+    height: 100%;
+    border-radius: 100%; }
 
 .adventure__details {
   flex-grow: 1;
@@ -3899,6 +3918,7 @@ body.dark .some-icon {
   overflow: hidden;
   border-radius: 32px; }
   .travel__bg img {
+     
     transition: all 1s cubic-bezier(0.7, 0, 0.3, 1); }
 
 .travel__preview {
@@ -4524,12 +4544,15 @@ body.dark .some-icon {
     z-index: -1; }
     @media only screen and (max-width: 1179px) {
       .planning__gallery {
-        width: 600px; } }
+        width: 600px; 
+         
+      } }
     @media only screen and (max-width: 1023px) {
       .planning__gallery {
         width: 500px; } }
     @media only screen and (max-width: 767px) {
       .planning__gallery {
+         
         position: relative;
         top: auto;
         right: auto;
@@ -4547,7 +4570,8 @@ body.dark .some-icon {
     -webkit-filter: drop-shadow(0px 40px 32px rgba(15, 15, 15, 0.12));
             filter: drop-shadow(0px 40px 32px rgba(15, 15, 15, 0.12)); }
   .planning__preview:not(:first-child) {
-    position: absolute; }
+    position: absolute;
+  margin-left:356px; }
   .planning__preview img {
     width: 100%; }
 
@@ -4869,7 +4893,8 @@ body.dark .some-icon {
 
 .places__preview {
   position: relative;
-  width: 80px;
+  width: 176px;
+  height: 184px; 
   margin: 0 auto 16px;
   border-radius: 50%;
   overflow: hidden; }
@@ -5491,7 +5516,7 @@ body.dark .some-icon {
             user-select: none;
     transition: box-shadow .2s, background .2s; }
   .location__input {
-    width: 100%;
+    width: 140%;
     height: 100%;
     padding: 0 16px 24px 56px;
     border-radius: 16px;
@@ -5570,7 +5595,7 @@ body.dark .some-icon {
           height: 20px; } }
   .location__description {
     position: absolute;
-    left: 56px;
+    left: 26px;
     bottom: 20px;
     pointer-events: none;
     font-size: 16px;
@@ -5762,6 +5787,7 @@ body.dark .some-icon {
       fill: #3B71FE; }
   .travelers__head {
     position: relative;
+    margin-right: 26px;
     border-radius: 16px;
     -webkit-user-select: none;
        -moz-user-select: none;
@@ -5858,7 +5884,7 @@ body.dark .some-icon {
           height: 20px; } }
   .travelers__description {
     position: absolute;
-    left: 56px;
+    left: 24px;
     bottom: 20px;
     pointer-events: none;
     font-size: 16px;
@@ -11981,8 +12007,11 @@ body.dark .upload__wrap {
 
 .datepicker {
   position: relative; }
-  .datepicker__list {
-    display: flex; }
+  .datepicker__list 
+  {
+    margin-left: 30px;
+    display: flex; 
+  }
   .datepicker__item {
     position: relative;
     height: 96px; }
@@ -11991,9 +12020,11 @@ body.dark .upload__wrap {
         height: 64px; } }
   .datepicker__list .datepicker__item {
     flex: 0 0 50%;
-    width: 50%; }
-  .datepicker__input {
     width: 100%;
+    margin-left: 50px;
+  }
+  .datepicker__input {
+    width: 140%;
     height: 100%;
     padding: 0 16px 24px 56px;
     border-radius: 16px;
@@ -12075,7 +12106,7 @@ body.dark .upload__wrap {
           height: 20px; } }
   .datepicker__description {
     position: absolute;
-    left: 56px;
+    left: 24px;
     bottom: 20px;
     pointer-events: none;
     font-size: 16px;
