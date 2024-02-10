@@ -3592,10 +3592,12 @@ body.dark .some-icon {
        object-fit: cover; }
     @media only screen and (max-width: 1023px) {
       .main__preview img {
+        top: 20px;
         border-radius: 0; } }
     @media only screen and (max-width: 767px) {
       .main__preview img {
-        position: static;
+        top: 50px;
+        position: relative;
         border-radius: 16px 16px 0 0;
         -o-object-position: 50% 100%;
            object-position: 50% 100%; } }
@@ -4095,6 +4097,10 @@ body.dark .some-icon {
   .live__item:hover {
     color: #3B71FE; }
     .live__item:hover .live__preview img {
+      /* width: 346px;
+    height: 230px; */
+    /* -o-object-fit: cover;
+    object-fit: cover; */
       -webkit-transform: scale(1.05);
               transform: scale(1.05); }
   body.dark .live__item {
@@ -5362,11 +5368,12 @@ body.dark .some-icon {
       .footer__col:nth-child(3) {
         width: 100%; } }
   .footer__logo {
-    width: 0px; /* Adjust the width to your desired size */
+    width: 40px; /* Adjust the width to your desired size */
     height: auto;
     margin-left: -200px; }
     @media only screen and (max-width: 767px) {
       .footer__logo {
+        margin-left: -40px;
         margin-right: auto; } }
   .footer__theme {
     display: flex;
@@ -12050,14 +12057,15 @@ body.dark .upload__wrap {
         padding-right: 0; } }
     @media only screen and (max-width: 1179px) {
       .datepicker__input {
-        padding-left: 48px;
+        padding-left: 18px;
         font-size: 18px; } }
     @media only screen and (max-width: 1023px) {
       .datepicker__input {
         padding: 0 0 16px 0; } }
     @media only screen and (max-width: 767px) {
       .datepicker__input {
-        padding: 0 0 16px 32px; } }
+        margin-left: -45px;
+        padding: 0 0 16px 0; } }
     .datepicker__input::-webkit-input-placeholder {
       color: #23262F; }
     .datepicker__input::-moz-placeholder {
@@ -12099,7 +12107,7 @@ body.dark .upload__wrap {
     @media only screen and (max-width: 767px) {
       .datepicker__icon {
         top: 8px;
-        left: 0;
+        left: -78px;
         display: flex;
         width: 24px; } }
     .datepicker__icon .icon {
@@ -12128,7 +12136,7 @@ body.dark .upload__wrap {
         left: 0; } }
     @media only screen and (max-width: 767px) {
       .datepicker__description {
-        left: 32px; } }
+        left: -45px; } }
   .datepicker_small .datepicker__item {
     height: 72px; }
     @media only screen and (max-width: 1023px) {
