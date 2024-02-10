@@ -2633,7 +2633,8 @@ body.dark .some-icon {
     display: flex;
     align-items: center; }
   .header__logo {
-    margin-right: 40px; }
+    margin-right: 25px;
+    margin-left: -10px; }
     @media only screen and (max-width: 1179px) {
       .header__logo {
         margin-right: 32px; } }
@@ -3582,7 +3583,7 @@ body.dark .some-icon {
     display: block; }
   .main__preview img {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -3793,11 +3794,11 @@ body.dark .some-icon {
   @media only screen and (max-width: 1179px) {
     .adventure__preview {
       width: 112px;
-    height : 112 px; } }
+    height : 112px; } }
   .adventure__preview img {
     width: 100%;
     height: 100%;
-    border-radius: 100%; }
+    border-radius: 50%; }
 
 .adventure__details {
   flex-grow: 1;
@@ -4710,8 +4711,9 @@ body.dark .some-icon {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 252px; /* Set the width to match the other images */
+    height: 252px; /* Set the height to match the other images */
+    object-fit: cover; 
     transition: -webkit-transform 1s;
     transition: transform 1s;
     transition: transform 1s, -webkit-transform 1s; }
@@ -5340,7 +5342,7 @@ body.dark .some-icon {
   .footer__col:first-child {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 256px; }
     @media only screen and (max-width: 767px) {
       .footer__col:first-child {
@@ -5360,13 +5362,16 @@ body.dark .some-icon {
       .footer__col:nth-child(3) {
         width: 100%; } }
   .footer__logo {
-    margin: -8px 0 16px; }
+    width: 0px; /* Adjust the width to your desired size */
+    height: auto;
+    margin-left: -200px; }
     @media only screen and (max-width: 767px) {
       .footer__logo {
         margin-right: auto; } }
   .footer__theme {
     display: flex;
     align-items: center;
+    margin-top: 8px; 
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
     line-height: 1.14286;
@@ -5375,7 +5380,8 @@ body.dark .some-icon {
     .footer__theme .icon {
       width: 16px;
       height: 16px;
-      margin-right: 8px;
+      margin-right: 4px;
+      
       fill: #777E90; }
     .footer__theme .theme {
       margin-left: 8px; }
@@ -12026,7 +12032,7 @@ body.dark .upload__wrap {
   .datepicker__input {
     width: 140%;
     height: 100%;
-    padding: 0 16px 24px 56px;
+    padding: 0 16px 24px 26px;
     border-radius: 16px;
     background: none;
     overflow: hidden;
@@ -12077,7 +12083,7 @@ body.dark .upload__wrap {
   .datepicker__icon {
     position: absolute;
     top: 20px;
-    left: 16px;
+    left: -12px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12106,7 +12112,7 @@ body.dark .upload__wrap {
           height: 20px; } }
   .datepicker__description {
     position: absolute;
-    left: 24px;
+    left: -4px;
     bottom: 20px;
     pointer-events: none;
     font-size: 16px;

@@ -166,6 +166,7 @@ if (isTouchDevice()) {
       body = travelers.find('.js-travelers-body'),
       counters = travelers.find('.js-counter'),
       button = counters.find('.js-counter-button');
+  
   head.on('click', function (e) {
     e.stopPropagation();
     travelers.toggleClass('active');
@@ -182,20 +183,25 @@ if (isTouchDevice()) {
     $('.js-date-open').show();
     $('.js-date-close').hide();
   });
+
   body.on('click', function (e) {
     e.stopPropagation();
   });
+
   $('html, body').on('click', function () {
     travelers.removeClass('active');
   });
+
   button.on('click', function () {
     var adults = Number($('.js-counter-adults').val()),
-        children = Number($('.js-counter-children').val()),
-        babies = Number($('.js-counter-babies').val());
-    var sum = adults + children + babies;
-    adults > 0 || children > 0 || babies > 0 ? sum > 1 ? content.text(sum + " guests") : content.text(sum + " guest") : content.text('Travelers');
+        children = Number($('.js-counter-children').val());
+    
+    var sum = adults + children;
+    
+    adults > 0 || children > 0 ? sum > 1 ? content.text(sum + " guests") : content.text(sum + " guest") : content.text('Travelers');
   });
-})(); // guests
+})();
+ // guests
 
 
 (function () {
@@ -925,4 +931,5 @@ document.getElementById('searchForm').addEventListener('submit', function(event)
   // Open default email client with pre-filled email
   window.location.href = mailtoLink;
 });
+
 
