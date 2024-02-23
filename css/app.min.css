@@ -4589,8 +4589,8 @@ body.dark .some-icon {
     height: 48px;
     padding: 0 48px 0 14px;
     border-radius: 24px;
-    background: none;
-    border: 2px solid #E6E8EC;
+    background: white;
+    border: 2px solid #777E90;
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     line-height: 1.71429;
@@ -4846,7 +4846,11 @@ body.dark .some-icon {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: -64px -10px 0; }
+  margin: -64px -10px 0;
+  overflow: hidden;
+ }
+ 
+
   @media only screen and (max-width: 1339px) {
     .places__slider {
       margin: -48px -16px 0; } }
@@ -4901,8 +4905,8 @@ body.dark .some-icon {
 
 .places__preview {
   position: relative;
-  width: 176px;
-  height: 184px; 
+  width: 95%;
+  height: auto; 
   margin: 0 auto 16px;
   border-radius: 50%;
   overflow: hidden; }
