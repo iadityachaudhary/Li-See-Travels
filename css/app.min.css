@@ -9393,6 +9393,7 @@ body.dark .some-icon {
       left: calc(50% - 790px); }
       @media only screen and (max-width: 767px) {
         .support__preview:first-child {
+          display: none;
           top: -50px;
           left: calc(50% - 240px); }
           .support__preview:first-child img {
