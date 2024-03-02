@@ -3166,7 +3166,9 @@ body.dark .some-icon {
 .panel {
   position: relative;
   z-index: 5;
-  padding: 40px; }
+  padding: 40px; 
+  
+}
   @media only screen and (max-width: 1179px) {
     .panel {
       padding: 32px 32px 24px;
@@ -3184,14 +3186,16 @@ body.dark .some-icon {
     height: 100%;
     overflow: hidden;
     border-radius: 24px;
+    margin-top: -240px;
+    height: calc(100% + 170px);
     box-shadow: 0px 40px 64px -32px rgba(15, 15, 15, 0.1); }
     @media only screen and (max-width: 767px) {
       .panel__background {
         border-radius: 20px;
         box-shadow: 0px 16px 32px rgba(15, 15, 15, 0.1); 
         /* top: -40px; */
-        margin-top: -150px;
-        height: calc(100% + 150px);
+        margin-top: -128px;
+        height: calc(100% + 155px);
       } 
       }
     .panel__background:before {
@@ -3213,20 +3217,22 @@ body.dark .some-icon {
         background: linear-gradient(92.98deg, #23262F 3.54%, rgba(35, 38, 47, 0.7) 93.38%);
         border-color: #353945; }
   .panel__nav {
-    position: relative;
+    position: absolute;
     z-index: 2;
     display: flex;
     margin-bottom: 24px;
+    margin-top: -240px; 
     box-shadow: inset 0 -1px 0 0 #E6E8EC; }
     @media only screen and (max-width: 767px) {
       .panel__nav {
         margin: 0 -20px 16px;
         padding: 0 20px;
-        margin-top: -150px; } }
+        margin-top: -130px; } }
     body.dark .panel__nav {
       box-shadow: inset 0 -1px 0 0 rgba(119, 126, 144, 0.3); }
   .panel__link {
     padding-bottom: 30px;
+    position: relative;
     border-bottom: 1px solid transparent;
     font-family: 'DM Sans', sans-serif;
     font-size: 14px;
@@ -3240,6 +3246,7 @@ body.dark .some-icon {
     .panel__link:hover {
       color: #23262F; }
     .panel__link.active {
+      position: relative;
       border-color: #23262F;
       color: #23262F; }
     body.dark .panel__link {
@@ -3256,7 +3263,13 @@ body.dark .some-icon {
           margin-right: auto; } }
   .panel__body {
     position: relative;
+    margin-top: -170px;
     z-index: 3; }
+    @media only screen and (max-width: 767px) {
+      .panel__body {
+        margin-top: calc(-170px - (100% - 420px)); /* Adjust the margin-top value as needed */
+      }
+    }
   .panel__row {
     display: flex; }
     @media only screen and (max-width: 1339px) {
@@ -3595,18 +3608,23 @@ body.dark .some-icon {
     top: 20px;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 80%;
     border-radius: 24px;
     -o-object-fit: cover;
        object-fit: cover; }
     @media only screen and (max-width: 1023px) {
       .main__preview img {
         top: 20px;
-        border-radius: 0; } }
+        border-radius: 0; 
+        /* width: 100%; */
+        height: 100%;
+      } }
     @media only screen and (max-width: 767px) {
       .main__preview img {
         top: 50px;
         position: relative;
+        /* width: 100%; */
+        height: 100%;
         border-radius: 16px 16px 0 0;
         -o-object-position: 50% 100%;
            object-position: 50% 100%; } }
@@ -3642,7 +3660,23 @@ body.dark .some-icon {
 
 .main__title {
   margin-bottom: 16px;
+  margin-top: -60px;
    }
+   @media only screen and (max-width: 767px) {
+    .main__title {
+      margin-top: 40px; /* Adjust the margin-top to move the title downwards */
+    }
+  }
+  @media only screen and (max-width: 1179px) {
+    .main__title {
+      margin-top: 40px; /* Adjust the margin-top to move the title downwards */
+    }
+  }
+  @media only screen and (max-width: 1023px) {
+    .main__title {
+      margin-top: 20px; /* Adjust the margin-top to move the title downwards */
+    }
+  }
   body.dark .main__title {
     color: #010a0e; }
 
@@ -3662,7 +3696,7 @@ body.dark .some-icon {
 
 @media only screen and (max-width: 767px) {
   .main_stays, .main_flights, .main_tasks {
-    margin-bottom: 64px; } }
+    margin-bottom: 96px; } }
 
 .main_stays .main__preview:before,
 .main_flights .main__preview:before,
@@ -3684,7 +3718,7 @@ body.dark .some-icon {
 
 @media only screen and (max-width: 767px) {
   .main_stays .main__preview img {
-    height: 780px; } }
+    height: 600px; } }
 
 @media only screen and (max-width: 767px) {
   .main_flights .main__preview img,
